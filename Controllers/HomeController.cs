@@ -24,7 +24,7 @@ namespace ruble_exchange_rate.Controllers
         public IActionResult Index()
         {
             DateTime date = DateTime.Today;
-            string url = string.Format("http://api.currencylayer.com/live?access_key=2bca30d02f7b0504ae1b2e160dd15c1a");
+            string url = string.Format("http://api.currencylayer.com/api");
             HttpWebRequest httpWebRequest = (HttpWebRequest)WebRequest.Create(url);
             HttpWebResponse httpWebResponse = (HttpWebResponse)httpWebRequest.GetResponse();
             string response;
